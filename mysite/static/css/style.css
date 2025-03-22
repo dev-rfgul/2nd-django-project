@@ -4,6 +4,10 @@ body {
   background-color: #ffffff;
 }
 
+.bg-maroon-custom {
+  background-color: #582534 !important;
+}
+
 .layout_padding {
   padding-top: 120px;
   padding-bottom: 120px;

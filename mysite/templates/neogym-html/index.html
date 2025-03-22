@@ -1,7 +1,10 @@
 {%extends "base.html"%}
 {%load static%}
 
+
+ 
 {%block home%}
+<div class="hero_area"> 
  <!-- slider section -->
  <section class=" slider_section position-relative">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -152,8 +155,8 @@
   </div>
 </section>
 <!-- end slider section -->
+</div>
  {%endblock %}
-
 
  {%block about%}
    <!-- Us section -->
@@ -171,7 +174,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="box">
               <div class="img-box">
-                <img src="images/u-1.png" alt="">
+                <img src="{%static 'images/u-1.png'%}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -186,7 +189,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="box">
               <div class="img-box">
-                <img src="images/u-4.png" alt="">
+                <img src="{%static 'images/u-4.png'%}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -201,7 +204,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="box">
               <div class="img-box">
-                <img src="images/u-2.png" alt="">
+                <img src="{%static 'images/u-2.png'%}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -216,7 +219,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="box">
               <div class="img-box">
-                <img src="images/u-3.png" alt="">
+                <img src="{%static 'images/u-3.png'%}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -263,7 +266,93 @@
   <!-- end us section -->
  {%endblock%}
 
-
+ {%block trainer%}
+ <!-- trainer section -->
+ 
+ <section class="trainer_section layout_padding">
+   <div class="container">
+     <div class="heading_container">
+       <h2>
+         Our Gym Trainers
+       </h2>
+     </div>
+     <div class="row">
+       <div class="col-lg-4 col-md-6 mx-auto">
+         <div class="box">
+           <div class="name">
+             <h5>
+               Smirth Jon
+             </h5>
+           </div>
+           <div class="img-box">
+             <img src="{% static 'images/t1.jpg'%}" alt="">
+           </div>
+           <div class="social_box">
+             <a href="">
+               <img src="{%static 'images/facebook-logo.png'%}" alt="">
+             </a>
+             <a href="">
+               <img src="{%static 'images/twitter.png'%}" alt="">
+             </a>
+             <a href="">
+               <img src="{%static 'images/instagram-logo.png'%}" alt="">
+             </a>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-6 mx-auto">
+         <div class="box">
+           <div class="name">
+             <h5>
+               Jean Doe
+             </h5>
+           </div>
+           <div class="img-box">
+             <img src="{%static 'images/t2.jpg'%}" alt="">
+           </div>
+           <div class="social_box">
+             <a href="">
+               <img src="{%static 'images/facebook-logo.png'%}" alt="">
+             </a>
+             <a href="">
+               <img src="{%static 'images/twitter.png'%}" alt="">
+             </a>
+             <a href="">
+               <img src="{%static 'images/instagram-logo.png'%}" alt="">
+             </a>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-6 mx-auto">
+         <div class="box">
+           <div class="name">
+             <h5>
+               Alex Den
+             </h5>
+           </div>
+           <div class="img-box">
+             <img src="{% static 'images/t3.jpg'%}" alt="">
+           </div>
+           <div class="social_box">
+             <a href="">
+               <img src="{%static 'images/facebook-logo.png'%}" alt="">
+             </a>
+             <a href="">
+               <img src="{%static 'images/twitter.png'%}" alt="">
+             </a>
+             <a href="">
+               <img src="{%static 'images/instagram-logo.png'%}" alt="">
+             </a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ 
+ <!-- end trainer section -->
+ 
+ {%endblock%} 
 
 
  

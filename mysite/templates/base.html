@@ -42,13 +42,15 @@
 
     <!-- Responsive style -->
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+    
   </head>
   <body>
 
   <!-- header section strats -->
 
-  <div class="hero_area">   
-  <header class="header_section">
+
+
+  <header class="header_section bg-maroon-custom">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
         <a class="navbar-brand" href="{%url 'home'%}">
@@ -88,13 +90,13 @@
     </div>
   </header>
   <!-- end header section -->
-    {% block home %} {% endblock %}
-</div>
+  {% block home %} {% endblock %}
 
 
-    {% block about %} {% endblock %}
-    {% block trainer %} {% endblock %}
-    {% block contact %} {% endblock %}
+  {% block about %} {% endblock %}
+  {% block trainer %} {% endblock %}
+  {% block contact %} {% endblock %}
+
 
 
 
@@ -154,9 +156,9 @@
 
 
   
-    <!-- JavaScript files -->
-    <script src="{% static 'js/bootstrap.js' %}"></script>
-    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  
   </body>
 </html>
 
